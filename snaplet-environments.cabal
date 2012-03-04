@@ -1,6 +1,7 @@
 Name:                snaplet-environments
 Version:             0.1
-Synopsis:            Provides ability to easly read configuration based on given app environment gi                     ven at command line, envs are defined in app configuration file
+Synopsis:            Provides ability to easly read configuration based on given app environment 
+                     given at command line, envs are defined in app configuration file
 License:             BSD3
 License-file:        LICENSE
 Author:              Kamil Ciemniewski
@@ -14,23 +15,20 @@ Library
   hs-source-dirs: src
 
   library
-  exposed-modules:  Snap.Snaplet.Environments,
-                    Snap.Snaplet.Environments.Instances
+  exposed-modules:  
+    Snap.Snaplet.Environments
+    Snap.Snaplet.Environments.Instances
   
-  -- Packages needed in order to build this package.
   Build-depends:
     base >= 4 && <= 5,
-    snap == 0.7.*,
-    snap-core  == 0.7.*,
+    snap >= 0.7 && < 0.9,
+    snap-core >= 0.7 && < 0.9,
     mtl >= 2 && < 3,
     configurator >= 0.2 && < 0.3,
     regex-tdfa >= 1.1.8 && < 1.2, 
     unordered-containers >= 0.1.4.3 && < 0.2,
     text >= 0.11 && < 0.12,
     bson >= 0.1.6 && < 0.2
-  
-  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
-  -- Build-tools:    
   
   extensions: 
       OverloadedStrings
