@@ -24,11 +24,11 @@ Library
     snap >= 0.7 && < 0.9,
     snap-core >= 0.7 && < 0.9,
     mtl >= 2 && < 3,
-    configurator >= 0.2 && < 0.3,
-    regex-tdfa >= 1.1.8 && < 1.2, 
-    unordered-containers >= 0.1.4.3 && < 0.2,
-    text >= 0.11 && < 0.12,
-    bson >= 0.1.6 && < 0.2
+    configurator >= 0.2,
+    regex-tdfa >= 1.1.8,
+    unordered-containers >= 0.1.4.3,
+    text >= 0.11,
+    bson >= 0.1.6
   
   extensions: 
       OverloadedStrings
